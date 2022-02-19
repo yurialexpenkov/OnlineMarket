@@ -1,0 +1,180 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-13 23:02+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\app_records\apps.py:7 .\app_records\models.py:20
+msgid "records"
+msgstr "записи"
+
+#: .\app_records\models.py:10 .\app_records\models.py:25
+msgid "Название"
+msgstr "Descriptons"
+
+#: .\app_records\models.py:11
+msgid "Содержание"
+msgstr "Descriptons"
+
+#: .\app_records\models.py:12
+msgid "Дата создания новости"
+msgstr "Date of creations"
+
+#: .\app_records\models.py:13 .\app_users\models.py:6
+msgid "Пользователь"
+msgstr "User name"
+
+#: .\app_records\models.py:21
+msgid "record"
+msgstr "запись"
+
+#: .\app_records\models.py:26 .\templates\records\records_detail.html:7
+msgid "Описание"
+msgstr "Descriptons"
+
+#: .\app_records\models.py:27
+msgid "Создан"
+msgstr "created"
+
+#: .\app_records\models.py:28
+msgid "Запись"
+msgstr "Records"
+
+#: .\app_records\models.py:31
+msgid "files"
+msgstr "файлы"
+
+#: .\app_records\models.py:32
+msgid "file"
+msgstr "файл"
+
+#: .\app_users\apps.py:7 .\app_users\models.py:10
+msgid "profiles"
+msgstr "профайлы"
+
+#: .\app_users\models.py:7 .\templates\users\account.html:17
+msgid "Обо мне"
+msgstr "About me"
+
+#: .\app_users\models.py:11
+msgid "profile"
+msgstr "профайл"
+
+#: .\templates\main.html:6
+msgid "Главная страница"
+msgstr "Home page"
+
+#: .\templates\main.html:10
+msgid "Добро пожаловать на сайт,"
+msgstr "Welcome to the website"
+
+#: .\templates\main.html:11
+msgid "Выход из учетной записи"
+msgstr "Log out of your account"
+
+#: .\templates\main.html:11
+msgid "Выйти"
+msgstr "Go out"
+
+#: .\templates\main.html:13
+msgid "Вы неавторизированны нанашем сайте"
+msgstr "You are unauthorized on our site"
+
+#: .\templates\main.html:14
+msgid "Войти"
+msgstr "enter"
+
+#: .\templates\main.html:15
+msgid "Зарегистрироваться"
+msgstr "Register"
+
+#: .\templates\main.html:17
+msgid "я - главная страница"
+msgstr "I am the main page"
+
+#: .\templates\main.html:18
+msgid "Перейти на страницу с записями"
+msgstr "Go to the records page"
+
+#: .\templates\records\create.html:7
+msgid "Создание записи блога"
+msgstr "Creating a blog entry"
+
+#: .\templates\records\create.html:10
+msgid "Создание записи блог"
+msgstr "Creating a blog entry"
+
+#: .\templates\records\create.html:15
+msgid "Сохранить"
+msgstr "Save"
+
+#: .\templates\records\records_detail.html:10
+msgid "Дата"
+msgstr "Date"
+
+#: .\templates\records\records_list.html:4
+msgid "Записи"
+msgstr "Records"
+
+#: .\templates\records\records_list.html:10
+msgid "дата создания"
+msgstr "Date of creations"
+
+#: .\templates\records\records_list.html:18
+msgid "Добавить новую запись"
+msgstr "Log out of your account"
+
+#: .\templates\records\records_list.html:19
+msgid "Загрузить новую запись"
+msgstr "Upload a new entry"
+
+#: .\templates\records\upload_file.html:7
+#: .\templates\records\upload_file.html:10
+msgid "Загрузка файла"
+msgstr "File Upload"
+
+#: .\templates\records\upload_file.html:14
+msgid "Загрузить файл"
+msgstr "Upload a new entry"
+
+#: .\templates\users\account.html:7
+msgid "Данные пользователя"
+msgstr "User data"
+
+#: .\templates\users\account.html:11
+msgid "Имя пользователя"
+msgstr "User name"
+
+#: .\templates\users\account.html:14
+msgid "Фамилия "
+msgstr "Last name"
+
+#: .\templates\users\account.html:20
+msgid "Редактировать информацию обо мне"
+msgstr "Edit information about me"
+
+#: .\templates\users\login.html:7
+msgid "Логин"
+msgstr "Login"
+
+#: .\templates\users\login.html:10
+msgid "Страница входа"
+msgstr "Login page"
+
+#: .\templates\users\register.html:7 .\templates\users\register.html:10
+msgid "Регистрация"
+msgstr "Register"

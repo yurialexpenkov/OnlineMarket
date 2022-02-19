@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basket</title>
+    в корзине находятся:
+    {{ history.basket }}
+    {%for product in basket %}
+        {% for single_product in product.contents_of_the_basket.all %}
+            <p>{{ single_product.product }} - Цена {{ single_product.product.price }} </p>
+        {% endfor %}
+    {% endfor %}
+    <form method="post" action="/marketplace/products/buy/">
+    {% csrf_token %}
+    <button type="submit">Купить</button>
+    </form>
+</head>
+<body>
+
+</body>
+</html>

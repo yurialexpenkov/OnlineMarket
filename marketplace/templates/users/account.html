@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load i18n %}
+{% load cache %}
+<head>
+	<meta charset="UTF-8">
+	<title>{% trans "Данные пользователя" %}</title>
+</head>
+
+<p>
+  {% trans "Имя пользователя" %}: {{user.first_name}}
+</p>
+<p>
+  {% trans "Фамилия " %}: {{user.last_name}}
+</p>
+<p>
+  {% trans "Баланс" %} : {{ profile.balance }}
+</p>
+<p>
+  Статус : {{ profile.status }}
+</p>
+<p>
+  {% trans "История покупок" %}:
+    {%for product in history %}
+        {% for single_product in product.purchase_history.all %}
+                <p>{{ single_product }} {{   product.date_of_purchase }}</p>
+        {% endfor %}
+    {% endfor %}
+</p>
+<form method="post" action="/users/{{ user.id }}/top_up_your_balancet/">
+		{% csrf_token %}
+		{{ top_up_your_balancet_form.as_p }}
+		<button type="submit">Пополнить баланс</button>
+</form>
+{% endblock %}

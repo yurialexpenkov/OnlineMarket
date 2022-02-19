@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load i18n %}
+	<h1></h1>
+			<p>
+				{% trans "Название" %}: {{ products.title }}
+			</p>
+			<p>
+				{% trans "Цена" %}: {{ products.price }} руб.
+			</p>
+			<p>
+				{% trans "Количество осталось" %}: {{ products.quantity }} шт.
+			</p>
+
+{% endblock %}

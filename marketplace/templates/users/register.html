@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load i18n %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% trans "Регистрация"  %}</title>
+</head>
+<body>
+<h2>{% trans "Регистрация" %}</h2>
+<form method="post">
+	{% csrf_token %}
+	{{ form.as_p }}
+	<button type="submit">Sing up</button>
+</form>
+</body>
+{% endblock %}

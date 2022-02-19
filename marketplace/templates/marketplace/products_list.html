@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load i18n %}
+<h1>{% trans "Товары" %}</h1>
+<ul>
+    {% for product in products_list %}
+        {% for shop in shops %}
+            {% if shop.product == product %}
+                <li>
+                <a href="{{ products.id }}/">{{ product.title }}</a> - Цена:{{ product.price }} - Общее количество продаж {{ product.number_of_sales }}
+                В магазине: {{ shop.shop.store_addresse }}, в наличии {{ shop.quantity }} шт
+                <form method="post" action="{{ product.id }}/basket/">
+                {% csrf_token %}
+                <input type="hidden" name="shop_id" value="{{ shop.shop.id }}">
+                <input type='hidden' name='post_id' value="{{ rand }}">
+                <button type="submit">Добавить в корзину</button>
+                </form>
+                </li>
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+</ul>
+
+{% endblock %}

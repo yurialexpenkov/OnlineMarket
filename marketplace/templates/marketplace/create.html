@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load i18n %}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{% trans "Создание записи блога" %}</title>
+</head>
+<body>
+	<h2>{% trans "Создание записи блог" %}а</h2>
+	<form method="post" action="/records/create/" enctype="multipart/form-data">
+		{% csrf_token %}
+		{{ records_form.as_p }}
+		{{ multi_form.as_p }}
+		<button type="submit">{% trans "Сохранить" %}</button>
+	</form>
+</body>
+{% endblock %}
